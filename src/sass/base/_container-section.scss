@@ -1,8 +1,8 @@
 .container {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
+  width: 320px;
 
   //phone screen
   @media screen and (min-width: 480px) {
@@ -23,7 +23,7 @@
 }
 
 .section {
-  padding: 60px 0;
+  padding: 85px 0;
 
   @media screen and (min-width: 1200px) {
     padding-top: 95px;
