@@ -1,5 +1,9 @@
-body {
-  font-family: "Roboto", sans-serif;
+:root {
+  --accent-color: #FF6C00;
+  --main-bg-color: #191C26;
+  --secondary-bg-color: #F7F7F7;
+  --main-txt-color:#303030;
+  --secondary-txt-color:#9DA4BD;
 }
 
 a {
@@ -61,4 +65,24 @@ p {
     padding-top: 95px;
     padding-bottom: 95px;
   }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-btn {
+  width: 160px;
+  height: 40px;
+  border: 1px solid;
+  background-color: transparent;
+  border-color: var(--accent-color);
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-btn:hover, .main-btn:focus {
+  background-color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

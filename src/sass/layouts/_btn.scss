@@ -1,0 +1,20 @@
+.main-btn{
+  width: 160px;
+  height: 40px;
+  
+  border: 1px solid;
+  background-color: transparent;
+  border-color: var(--accent-color);
+  border-radius: 20px;
+
+  color: #fff;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover, &:focus{
+    background-color: var(--accent-color);
+  }
+}
