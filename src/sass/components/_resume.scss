@@ -1,0 +1,38 @@
+.resume__card-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+.card__couple--rigth {
+  margin-top: 30px;
+}
+.card__item {
+  background-color: var(--secondary-bg-color);
+  min-width: 194px;
+  min-height: 133px;
+  margin-bottom: 30px;
+  padding: 20px 35px ;
+  text-align: center;
+}
+.card__count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  &::after{
+    content: "+";
+    font-size: 13px;
+    color: var(--accent-color);
+
+    position: absolute;
+
+  }
+}
+.card__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}

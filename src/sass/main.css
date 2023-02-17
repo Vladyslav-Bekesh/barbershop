@@ -2,8 +2,8 @@
   --accent-color: #FF6C00;
   --main-bg-color: #191C26;
   --secondary-bg-color: #F7F7F7;
-  --main-txt-color:#303030;
-  --secondary-txt-color:#9DA4BD;
+  --dark-txt-color:#303030;
+  --light-txt-color:#9DA4BD;
 }
 
 a {
@@ -37,9 +37,9 @@ p {
 
 .container {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
+  width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -58,7 +58,7 @@ p {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 85px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -78,11 +78,197 @@ body {
   background-color: transparent;
   border-color: var(--accent-color);
   border-radius: 20px;
-  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333333333;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main-btn:hover, .main-btn:focus {
   background-color: var(--accent-color);
+}
+
+.main-btn--dark {
+  color: var(--dark-txt-color);
+}
+
+.main-btn--ligth {
+  color: #fff;
+}
+
+.main-btn--centrable {
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 30px;
+}
+
+.logo__svg {
+  color: #fff;
+  fill: currentColor;
+}
+
+.menu__svg {
+  color: #fff;
+  fill: currentColor;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.line--dark {
+  display: flex;
+  align-items: center;
+}
+.line--dark::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--dark-txt-color);
+}
+
+.line--ligth {
+  display: flex;
+  align-items: center;
+}
+.line--ligth::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--light-txt-color);
+}
+
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.--dark {
+  color: var(--dark-txt-color);
+}
+
+.--little-dark {
+  color: var(--light-txt-color);
+}
+
+.--ligth {
+  color: #fff;
+}
+
+.comment {
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.hero {
+  background-color: var(--main-bg-color);
+  padding: 208px 30px 183px 30px;
+  background-image: url(/src/images/mobile/hero/hero-slider-mob-slider3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us__txt {
+  font-size: 14px;
+  line-height: 1.8571428571;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+
+.prices {
+  background-image: url(/src/images/mobile/prices/prices-mob.png);
+  background-color: var(--main-bg-color);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service__list {
+  padding: 30px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  margin-bottom: 50px;
+}
+
+.service__item {
+  display: flex;
+  justify-content: space-between;
+}
+.service__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.service__line {
+  margin: 0 10px;
+  flex-grow: 1;
+  border-bottom: 1px solid;
+  border-color: var(--light-txt-color);
+  display: flex;
+  align-items: baseline;
+}
+
+.resume__card-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+.card__couple--rigth {
+  margin-top: 30px;
+}
+
+.card__item {
+  background-color: var(--secondary-bg-color);
+  min-width: 194px;
+  min-height: 133px;
+  margin-bottom: 30px;
+  padding: 20px 35px;
+  text-align: center;
+}
+
+.card__count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571428571;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.card__count::after {
+  content: "+";
+  font-size: 13px;
+  color: var(--accent-color);
+  position: absolute;
+}
+
+.card__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.barbers {
+  background-color: var(--secondary-bg-color);
 }/*# sourceMappingURL=main.css.map */

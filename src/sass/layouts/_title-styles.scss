@@ -1,0 +1,71 @@
+// --- --- PRE TITLE
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.line--dark {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: var(--dark-txt-color);
+  }
+}
+
+.line--ligth {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: var(--light-txt-color);
+  }
+}
+
+// --- --- TITLE
+
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: calc(56 / 48);
+  letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
+}
+
+.--dark {
+  color: var(--dark-txt-color);
+}
+
+.--little-dark {
+  color: var(--light-txt-color);
+}
+
+.--ligth {
+  color: #fff;
+}
+
+// --- --- COMMENT
+
+.comment {
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
