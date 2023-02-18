@@ -3,6 +3,7 @@
   background-image: url("../images/mobile/footer/footer-dg-mob.png");
 }
 .adresses__list {
+  margin-bottom: 47px;
 }
 .adresses__item {
   display: flex;
@@ -14,9 +15,10 @@
 .adresses__svg{
   fill:currentColor;
 }
-.adresses__item {
+.adresses__item--email{
+  text-decoration: underline;
 }
-.work__lebel {
+.work__label {
+  margin-bottom: 20px;
 }
-.work__text {
-}
+
