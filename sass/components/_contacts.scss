@@ -1,0 +1,22 @@
+.contacts {
+  background-color: var(--main-bg-color);
+  background-image: url("../images/mobile/footer/footer-dg-mob.png");
+}
+.adresses__list {
+}
+.adresses__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.adresses__svg{
+  fill:currentColor;
+}
+.adresses__item {
+}
+.work__lebel {
+}
+.work__text {
+}

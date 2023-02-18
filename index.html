@@ -430,21 +430,37 @@
 
       <section class="section gallery">
         <div class="container">
-          <p class="pre-title line--dark --dark">
+          <p class="pre-title pre-title--gallery line--dark --dark">
             In Latin, "barba" means "beard"
           </p>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img src="./images/mobile/gallery/gal-mob1.jpg" alt="" class="gallery__photo" />
+              <img
+                src="./images/mobile/gallery/gal-mob1.jpg"
+                alt=""
+                class="gallery__photo"
+              />
             </li>
             <li class="gallery__item">
-              <img src="./images/mobile/gallery/gal-mob2.jpg" alt="" class="gallery__photo" />
+              <img
+                src="./images/mobile/gallery/gal-mob2.jpg"
+                alt=""
+                class="gallery__photo"
+              />
             </li>
             <li class="gallery__item">
-              <img src="./images/mobile/gallery/gal-mob3.jpg" alt="" class="gallery__photo" />
+              <img
+                src="./images/mobile/gallery/gal-mob3.jpg"
+                alt=""
+                class="gallery__photo"
+              />
             </li>
             <li class="gallery__item">
-              <img src="./images/mobile/gallery/gal-mob4.jpg" alt="" class="gallery__photo" />
+              <img
+                src="./images/mobile/gallery/gal-mob4.jpg"
+                alt=""
+                class="gallery__photo"
+              />
             </li>
           </ul>
         </div>
@@ -453,8 +469,31 @@
       <section class="section booking">
         <div class="container">
           <h2 class="title --ligth">Book a Service</h2>
-          <form action=""></form>
-          <button class="main-btn"></button>
+          <form name="book-form" class="book-form" action="" autocomplete="on">
+            <div class="">
+              <input type="" placeholder="Name*" class="book-form__input" />
+            </div>
+            <div class="">
+              <input
+                type="tel"
+                placeholder="Telephone*"
+                class="book-form__input"
+              />
+            </div>
+
+            <div class="book-form__textarea">
+              <textarea
+                class="book-form__message book-form__input"
+                name="user-message"
+                id="user-message"
+                placeholder="message"
+              ></textarea>
+            </div>
+          </form>
+
+          <button class="main-btn main-btn--centrable main-btn--ligth">
+            send
+          </button>
         </div>
       </section>
 
@@ -462,13 +501,23 @@
         <div class="container">
           <h2 class="title --ligth">Contacts</h2>
           <ul class="adresses__list">
-            <li class="adresses__item --little-dark">
-              Main Street, 7A, Kyiv, 08132
+            <li class="adresses__item adresses__item--street --little-dark">
+              <svg class="adresses__svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#map-pin"></use>
+              </svg> Main Street, 7A, Kyiv, 08132
             </li>
-            <li class="adresses__item --little-dark">+38 044 111 11 11</li>
-            <li class="adresses__item --little-dark">barbershop@email.com</li>
+            <li class="adresses__item adresses__item--phone --little-dark">
+              <svg class="adresses__svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#phone"></use>
+              </svg> +38 044 111 11 11
+            </li>
+            <li class="adresses__item adresses__item--email --little-dark">
+              <svg class="adresses__svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#mail"></use>
+              </svg> barbershop@email.com
+            </li>
           </ul>
-          <p class="work__lebel --ligth">working hours</p>
+          <p class="work__label --ligth">working hours</p>
           <p class="work__text --little-dark">
             Daily from 9:00 AM till 22:00 PM
           </p>

@@ -1,0 +1,9 @@
+
+.pre-title--gallery{
+  margin-bottom: 44px;
+}
+.gallery__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  } 
+}

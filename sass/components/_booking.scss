@@ -1,0 +1,45 @@
+.booking {
+  background-color: var(--main-bg-color);
+}
+.book-form {
+  display: block;
+}
+.book-form__wrapper {
+  display: block;
+  margin-bottom: 44px;
+}
+.book-form__input {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 44px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--rgba-light-txt-color);
+}
+.book-form__name {
+  display: block;
+  margin: 0;
+}
+.book-form__phone {
+  display: block;
+  margin: 0;
+}
+.book-form__label {
+  font-size: 11px;
+  line-height: calc(15/14);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.book-form__message {
+  color: var(--rga-light-txt-color);
+  min-height: 60px;
+  max-lines: 6;
+  resize: none;
+}
