@@ -105,7 +105,8 @@ body {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 40px 30px;
@@ -187,7 +188,7 @@ body {
 .hero {
   background-color: var(--main-bg-color);
   padding: 208px 30px 183px 30px;
-  background-image: url(/src/images/mobile/hero/hero-slider-mob-slider3.jpg);
+  background-image: url(/images/mobile/hero/hero-slider-mob-slider1.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -227,6 +228,10 @@ body {
   border-color: var(--light-txt-color);
   display: flex;
   align-items: baseline;
+}
+
+.resume__comment {
+  margin-bottom: 45px;
 }
 
 .resume__card-wrapper {
