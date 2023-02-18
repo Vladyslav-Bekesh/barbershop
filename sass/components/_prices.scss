@@ -1,8 +1,9 @@
 .prices {
-  background-image: url(/src/images/mobile/prices/prices-mob.png);
   background-color: var(--main-bg-color);
-  background-position: center;
+  background-image: url("../images/mobile/prices/prices-mob.png");
+  background-position: center ;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .service__list {
@@ -14,21 +15,18 @@
   display: flex;
   justify-content: space-between;
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
-}
-.service__name {
-
 }
 
 .service__line{
   margin: 0 10px;
   flex-grow: 1;
+  
 
   border-bottom: 1px solid;
-  border-color: var(--light-txt-color);
+  border-color: var(--rgba-light-txt-color);
   display: flex;
   align-items: baseline;
 }
-.service__cost {
-}
+

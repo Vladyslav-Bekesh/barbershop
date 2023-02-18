@@ -1,13 +1,15 @@
 .container {
   margin: 0 auto;
-  padding-left: 31px;
-  padding-right: 31px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
   width: 320px;
 
   //phone screen
   @media screen and (min-width: 480px) {
     width: 480px; 
-  
+    padding-left: 31px;
+    padding-right: 31px;
   }
 
   //tablet screen
@@ -18,7 +20,6 @@
   //desktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;
-
   }
 }
 

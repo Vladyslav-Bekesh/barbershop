@@ -1,8 +1,11 @@
-:root{
+:root {
   // colors
-  --accent-color: #FF6C00;
-  --main-bg-color: #191C26;
-  --secondary-bg-color: #F7F7F7;
-  --dark-txt-color:#303030;
-  --light-txt-color:#9DA4BD;
+  --accent-color: #ff6c00;
+  --main-bg-color: #191c26;
+  --secondary-bg-color: #f7f7f7;
+  --dark-txt-color: #303030;
+  --light-txt-color: #9da4bd;
+  --rgba-light-txt-color: rgba(157, 164, 189, 0.12);
+
+  --fast-anim: 150ms;
 }

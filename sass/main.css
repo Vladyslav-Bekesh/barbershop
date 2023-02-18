@@ -1,9 +1,11 @@
 :root {
-  --accent-color: #FF6C00;
-  --main-bg-color: #191C26;
-  --secondary-bg-color: #F7F7F7;
-  --dark-txt-color:#303030;
-  --light-txt-color:#9DA4BD;
+  --accent-color: #ff6c00;
+  --main-bg-color: #191c26;
+  --secondary-bg-color: #f7f7f7;
+  --dark-txt-color: #303030;
+  --light-txt-color: #9da4bd;
+  --rgba-light-txt-color: rgba(157, 164, 189, 0.12);
+  --fast-anim: 150ms;
 }
 
 a {
@@ -37,13 +39,15 @@ p {
 
 .container {
   margin: 0 auto;
-  padding-left: 31px;
-  padding-right: 31px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -69,6 +73,47 @@ p {
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.socials__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.socials__href {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.socials__svg {
+  fill: currentColor;
+}
+
+.socials--barbers {
+  color: var(--dark-txt-color);
+}
+.socials--barbers:hover, .socials--barbers:focus {
+  color: var(--accent-color);
+}
+
+.socials--round {
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.transition-prop {
+  transition-duration: var(--fast-anim);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, border-color, box-shadow;
 }
 
 .main-btn {
@@ -188,7 +233,7 @@ body {
 .hero {
   background-color: var(--main-bg-color);
   padding: 208px 30px 183px 30px;
-  background-image: url(/images/mobile/hero/hero-slider-mob-slider1.jpg);
+  background-image: url("../images/mobile/hero/hero-slider-mob-slider1.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -201,10 +246,11 @@ body {
 }
 
 .prices {
-  background-image: url(/src/images/mobile/prices/prices-mob.png);
   background-color: var(--main-bg-color);
+  background-image: url("../images/mobile/prices/prices-mob.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .service__list {
@@ -218,14 +264,14 @@ body {
   justify-content: space-between;
 }
 .service__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .service__line {
   margin: 0 10px;
   flex-grow: 1;
   border-bottom: 1px solid;
-  border-color: var(--light-txt-color);
+  border-color: var(--rgba-light-txt-color);
   display: flex;
   align-items: baseline;
 }
@@ -236,21 +282,38 @@ body {
 
 .resume__card-wrapper {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   align-items: start;
+}
+@media screen and (min-width: 480px) {
+  .resume__card-wrapper {
+    gap: 30px;
+  }
 }
 
 .card__couple--rigth {
-  margin-top: 30px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 480px) {
+  .card__couple--rigth {
+    margin-top: 30px;
+  }
 }
 
 .card__item {
   background-color: var(--secondary-bg-color);
-  min-width: 194px;
-  min-height: 133px;
   margin-bottom: 30px;
-  padding: 20px 35px;
+  min-width: 100px;
+  min-height: 133px;
+  padding: 20px 13px;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .card__item {
+    min-width: 130px;
+    min-height: 133px;
+    padding: 20px 35px;
+  }
 }
 
 .card__count {
@@ -276,4 +339,36 @@ body {
 
 .barbers {
   background-color: var(--secondary-bg-color);
+}
+
+.title--barbers {
+  margin-bottom: 40px;
+}
+
+.barbers__item {
+  max-height: 502px;
+}
+.barbers__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.barbers__photo {
+  margin-bottom: 30px;
+}
+
+.barbers__name {
+  font-size: 18px;
+  line-height: 1.3888888889;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark-txt-color);
+  margin-bottom: 8px;
+}
+
+.barbers__pos {
+  font-size: 14px;
+  line-height: 1.3571428571;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

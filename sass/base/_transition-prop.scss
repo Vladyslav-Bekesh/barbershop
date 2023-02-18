@@ -1,0 +1,5 @@
+.transition-prop {
+  transition-duration: var(--fast-anim);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, border-color, box-shadow;
+}

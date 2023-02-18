@@ -1,3 +1,31 @@
-.barbers{
+.barbers {
   background-color: var(--secondary-bg-color);
+}
+.title--barbers {
+  margin-bottom: 40px;
+}
+
+.barbers__item {
+  max-height: 502px;
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+.barbers__photo {
+  margin-bottom: 30px;
+}
+.barbers__name {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark-txt-color);
+  margin-bottom: 8px;
+}
+.barbers__pos {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
 }
