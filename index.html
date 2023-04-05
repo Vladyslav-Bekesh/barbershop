@@ -8,7 +8,12 @@
     <title>Barbershop</title>
 
     <!-- SCRIPTS -->
-    <script src="./js/js-main.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- MODERN NORMALIZE -->
     <link
@@ -32,16 +37,19 @@
   </head>
 
   <body>
-    <header class="header container">
-      <div class="logo">
-        <svg class="logo__svg" width="69" height="55">
-          <use href="./images/symbol-defs.svg#logo"></use>
-        </svg>
-      </div>
-      <div class="menu">
-        <svg class="menu__svg" width="40" height="40">
-          <use href="./images/symbol-defs.svg#menu"></use>
-        </svg>
+    <header class="header ">
+      <div class="header--container container">
+        <div class="logo">
+          <svg class="logo__svg" width="69" height="55">
+            <use href="./images/symbol-defs.svg#logo"></use>
+          </svg>
+        </div>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
+          <svg class="menu__svg" width="40" height="40">
+            <use href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -504,23 +512,24 @@
             <li class="adresses__item adresses__item--street --little-dark">
               <svg class="adresses__svg" width="24" height="24">
                 <use href="./images/symbol-defs.svg#map-pin"></use>
-              </svg> Main Street, 7A, Kyiv, 08132
+              </svg>
+              Main Street, 7A, Kyiv, 08132
             </li>
             <li class="adresses__item adresses__item--phone --little-dark">
               <svg class="adresses__svg" width="24" height="24">
                 <use href="./images/symbol-defs.svg#phone"></use>
-              </svg> +38 044 111 11 11
+              </svg>
+              +38 044 111 11 11
             </li>
             <li class="adresses__item adresses__item--email --little-dark">
               <svg class="adresses__svg" width="24" height="24">
                 <use href="./images/symbol-defs.svg#mail"></use>
-              </svg> barbershop@email.com
+              </svg>
+              barbershop@email.com
             </li>
           </ul>
           <p class="work__label line--ligth --ligth">working hours</p>
-          <p class="--little-dark">
-            Daily from 9:00 AM till 22:00 PM
-          </p>
+          <p class="--little-dark">Daily from 9:00 AM till 22:00 PM</p>
         </div>
       </section>
     </main>
@@ -536,5 +545,67 @@
         </div>
       </div>
     </footer>
+
+    <!-- MOBILE MENU -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__close" width="40" height="40">
+          <use href="./images/svg/symbol-defs.svg#modal-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__nav">
+        <li class="mobile-nav__item transition-prop">
+          <a
+            href="./index.html"
+            class="mobile-nav__item__link menu--current-page"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-nav__item transition-prop">
+          <a href="./portfolio.html" class="mobile-nav__item__link"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-nav__item transition-prop">
+          <a href="" class="mobile-nav__item__link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__adresses">
+        <li class="mobile-adresses__item">
+          <a href="tel:+380961111111" class="adresses__tel adresses--link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-adresses__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="adresses__mail adresses--link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="instagam.com" class="mobile-socials__link">Instagam</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="twitter.com" class="mobile-socials__link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="facebook.com" class="mobile-socials__link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="linkedin.com" class="mobile-socials__link">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- MOBILE MENU -->
+
+    <!-- <script src="./js/mobile-menu.js"></script> -->
   </body>
 </html>

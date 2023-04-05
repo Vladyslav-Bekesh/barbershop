@@ -154,7 +154,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 30px;
+}
+
+.header--container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo__svg {
@@ -165,6 +169,15 @@ body {
 .menu__svg {
   color: #fff;
   fill: currentColor;
+}
+
+.menu-toggle {
+  fill: currentColor;
+  border: none;
+  background-color: transparent;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  color: var(--main-links-color);
 }
 
 .pre-title {
@@ -284,9 +297,93 @@ body {
     width: 60px;
   }
 }
+.menu-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 40px 48px;
+  background-color: #fff;
+  z-index: 100;
+  transform: translateX(150%);
+  transition: transform 250ms;
+}
+
+.menu--current-page {
+  color: var(--main-links-color);
+}
+
+.is-open {
+  transform: translateX(0);
+  z-index: 10000;
+}
+
+.mobile-menu__nav {
+  margin-bottom: 300px;
+}
+
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-nav__item__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.mobile-nav__item__link:focus {
+  color: var(--main-links-color);
+}
+
+.mobile-adresses__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__adresses {
+  margin-bottom: 65px;
+}
+
+.adresses__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--main-links-color);
+}
+
+.adresses__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__mobile-socials {
+  display: flex;
+  margin-top: auto;
+}
+
+.mobile-socials__item:not(:last-child) {
+  border-right: solid 1px;
+  border-color: rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--main-links-color);
+}
+
 .hero {
   background-color: var(--main-bg-color);
-  padding: 208px 30px 183px 30px;
+  padding: 208px 0px 183px 0px;
   background-image: url("../images/mobile/hero/hero-slider-mob-slider1.jpg");
   background-repeat: no-repeat;
   background-position: center;

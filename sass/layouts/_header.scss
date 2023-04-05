@@ -3,15 +3,51 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 30px;
+}
+
+.header--container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo__svg {
   color: #fff;
-  fill:currentColor;
+  fill: currentColor;
 }
 
 .menu__svg {
   color: #fff;
-  fill:currentColor;
+  fill: currentColor;
 }
+
+.menu-toggle {
+  // position: absolute;
+  // margin-right: 40px;
+  // margin-left: auto;
+
+  fill: currentColor;
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--main-links-color);
+  }
+}
+
+
+// @media screen and (min-width: 768px) {
+//   .header {
+//     position: absolute;
+//   }
+//   .menu__svg {
+//     position: absolute;
+//   }
+// }
+
+
+// @media screen and (min-width: 1200px) {
+//   .menu__svg {
+//     display: none;
+//   }
+// }
