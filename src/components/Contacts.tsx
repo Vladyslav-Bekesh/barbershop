@@ -14,6 +14,7 @@ import {
 import { LocationOn, Phone, Email, AccessTime } from "@mui/icons-material";
 import { useLanguage } from "./LanguageProvider";
 import { motion } from "framer-motion";
+import { ContactForm } from "./ContactForm";
 
 export function Contacts() {
   const { t } = useLanguage();
@@ -84,8 +85,8 @@ export function Contacts() {
           </Typography>
         </motion.div>
 
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={8}>
+        <Grid container spacing={4} sx={{ alignItems: 'stretch' }}>
+          <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column' }}>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -99,6 +100,7 @@ export function Contacts() {
                   borderRadius: "16px",
                   bgcolor: "rgba(255, 255, 255, 0.95)",
                   color: "text.primary",
+                  mb: 4,
                 }}
               >
                 <List>
@@ -152,14 +154,13 @@ export function Contacts() {
                 </List>
               </Paper>
             </motion.div>
-          </Grid>
 
-          <Grid item xs={12} md={4}>
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
+              style={{ flex: 1, display: 'flex' }}
             >
               <Paper
                 elevation={8}
@@ -175,14 +176,11 @@ export function Contacts() {
                   justifyContent: "center",
                   maxWidth: "100%",
                   mx: { xs: "auto", md: 0 },
+                  flex: 1,
                 }}
               >
                 <Box
                   sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    mb: 2,
                     width: "100%",
                   }}
                 >
@@ -190,13 +188,11 @@ export function Contacts() {
                     sx={{
                       color: "secondary.main",
                       fontSize: "3rem",
-                      flex: 1,
-                      display: "flex",
-                      justifyContent: "flex-end",
+                      margin: "0 auto",
                     }}
                   />
 
-                  <Box sx={{ flex: 1, textAlign: "center" }}>
+                  <Box sx={{ textAlign: "center" }}>
                     <Typography
                       variant="h6"
                       sx={{
@@ -204,6 +200,7 @@ export function Contacts() {
                         fontWeight: 700,
                         textTransform: "uppercase",
                         letterSpacing: "0.1em",
+                        mb: 1,
                       }}
                     >
                       {t("contacts.hours")}
@@ -220,10 +217,19 @@ export function Contacts() {
                       {t("contacts.hoursText")}
                     </Typography>
                   </Box>
-
-                  <Box sx={{ flex: 1, display: { xs: "none", sm: "block" } }} />
                 </Box>
               </Paper>
+            </motion.div>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <ContactForm />
             </motion.div>
           </Grid>
         </Grid>

@@ -65,6 +65,18 @@
     hoursText: "Daily from 9:00 AM till 22:00 PM",
   },
 
+  contactForm: {
+    title: "Contact Us",
+    name: "Name*",
+    email: "Email*",
+    phone: "Phone",
+    message: "Message*",
+    send: "Send",
+    sending: "Sending...",
+    success: "Message sent successfully!",
+    error: "Error sending message. Please try again.",
+  },
+
   footer: {
     copyright: " Copyright",
   },
